@@ -4,7 +4,7 @@ const Cards = () => {
     return (
         <div className='mx-5 mt-5' >
             <h1 className='text-2xl'>Recommended For You..!</h1>
-            <div className=''>
+            <div className='mt-3'>
                 <CardsImg />
             </div>
         </div>
@@ -42,17 +42,14 @@ const CardsImg = () => {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrv3yYEdBDNVuhPW50-J6CgflzfNSRwsw4sA&s",
     ];
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {movieCollection.map((image, index) => (
-                <div
-                    key={index}
-                    className="rounded-lg "
-                >
-                    <img
-                        src={image}
-                        alt={`Image ${index + 1}`}
-                        className=" h-auto rounded-lg w-[430px]"
-                    />
+                <div key={index} className=" h-full rounded-lg ">
+                    <img src={image} alt={`Image ${index + 1}`}  className=" h-[200px] rounded-lg w-[430px]" />
+                    <div className='font-serif'>
+                        <span className='ml-2'>2005</span><span className='ml-5'>HW</span><span className='ml-5'>H-P</span>
+                        <p className='mb-2 ml-2'>The Hollowen</p>
+                    </div>
                 </div>
             ))}
         </div>

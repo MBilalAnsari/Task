@@ -7,7 +7,7 @@ import { TfiVideoClapper } from "react-icons/tfi";
 
 const Sidebar = () => {
     return (
-        <div className="rounded-[15px] w-[10%] max-w-[60px] mt-5 max-h-[90vh] h-auto bg-[#171D2F]">
+        <div className="rounded-[15px] w-[10%] max-w-[60px] mt-5 h-[450px] bg-[#171D2F]">
             <div className="flex justify-center">
                 <div className="flex flex-col items-center">
                     <div className="mb-10 mt-3 text-red-500 text-2xl">
