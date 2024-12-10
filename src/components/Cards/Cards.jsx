@@ -4,7 +4,7 @@ const Cards = () => {
     return (
         <div className='mx-5 mt-5' >
             <h1 className='text-2xl'>Recommended For You..!</h1>
-            <div className='grid lg:grid-cols-4'>
+            <div className=''>
                 <CardsImg />
             </div>
         </div>
@@ -42,7 +42,7 @@ const CardsImg = () => {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrv3yYEdBDNVuhPW50-J6CgflzfNSRwsw4sA&s",
     ];
     return (
-        <div className="">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {movieCollection.map((image, index) => (
                 <div
                     key={index}
