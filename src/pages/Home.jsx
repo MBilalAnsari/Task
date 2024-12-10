@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className=' flex  gap-5 ml-5 mr-5  '>  
       <Sidebar/>
-      <div className=' border mt-5 '>
+      <div className=' mt-5 '>
             <Searchbar/>
             <Slides/>
             <Cards/>
