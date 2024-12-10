@@ -9,7 +9,7 @@ import Home from "./pages/Home"
 export default function App() { 
   return (
     <>
-      <div className='border-[3px]  bg-[#0F141E] text-white'>
+      <div className='  bg-[#0F141E] text-white'>
         <Home />
       </div>
     </>
